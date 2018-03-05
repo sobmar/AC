@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Highest {
+    public static void main(String[] args){
+
+        Scanner input = new Scanner(System.in);
+
+        double numberOne = 0.0;
+        double numberTwo = 0.0;
+        double numberThree = 0.0;
+
+        System.out.print("Enter number one: ");
+        numberOne = input.nextDouble();
+
+        System.out.print("Enter number two: ");
+        numberTwo = input.nextDouble();
+
+        System.out.print("Enter number three: ");
+        numberThree = input.nextDouble();
+		
+        if (numberOne>numberTwo&&numberOne>numberThree||numberTwo==numberThree&&numberOne>numberTwo){
+			System.out.println("The highest number is: " + numberOne);
+		}
+		if (numberTwo>numberOne&&numberTwo>numberThree||numberOne==numberThree&&numberTwo>numberThree){
+			System.out.println("The highest number is: " + numberTwo);
+		}
+        if (numberThree>numberOne&&numberThree>numberTwo||numberOne==numberTwo&&numberThree>numberTwo){
+			System.out.println("The highest number is: " + numberThree);
+		}
+		if (numberOne==numberTwo&&numberThree==numberTwo){
+			System.out.println("All numbers are the same.");
+		}
+     }
+}
