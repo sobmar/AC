@@ -1,11 +1,19 @@
+import java.util.Scanner;
+
 public class Divided{
    public static void main(String args[]) {
-	    int numberOne = 26;
+	   
+	    System.out.println("Enter a number: ");
+		Scanner input = new Scanner(System.in);
+
+		int numberOne = 0;
+		numberOne = input.nextInt();
+		
 		if(numberOne%23==0) {
 			System.out.println("Number is divided by 23.");
 		}
 		else		{
-		System.out.println("Number is not divided by 23.");
+			System.out.println("Number is not divided by 23.");
 		}		
    }
 }
